@@ -1,0 +1,236 @@
+/**
+ * WooCommerce Customer Acquisition Tracker - Admin Styles
+ */
+
+/* Container */
+.woo-cat-container {
+    background: #fff;
+    border: 1px solid #e2e4e7;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-top: 20px;
+}
+
+/* Header */
+.woo-cat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e2e4e7;
+    background: #f8f9fa;
+}
+
+/* Tabs */
+.woo-cat-tabs {
+    display: flex;
+}
+
+.woo-cat-tab {
+    padding: 10px 15px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    font-weight: 500;
+}
+
+.woo-cat-tab:hover {
+    color: #0073aa;
+}
+
+.woo-cat-tab.active {
+    color: #0073aa;
+    border-bottom-color: #0073aa;
+}
+
+/* Tab Content */
+.woo-cat-content {
+    padding: 20px;
+}
+
+.woo-cat-tab-content {
+    display: none;
+}
+
+.woo-cat-tab-content.active {
+    display: block;
+}
+
+/* Controls */
+.woo-cat-controls {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #e2e4e7;
+    border-radius: 3px;
+}
+
+.woo-cat-filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.woo-cat-filter label {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.woo-cat-filter-control {
+    margin-right: 20px !important;
+}
+
+/* Loading */
+.woo-cat-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.woo-cat-loading .spinner {
+    float: none;
+    margin: 0 0 10px 0;
+}
+
+/* Summary Stats */
+.woo-cat-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.woo-cat-stat-box {
+    background: #f8f9fa;
+    border: 1px solid #e2e4e7;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
+
+.woo-cat-stat-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.woo-cat-stat-value {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.woo-cat-stat-trend {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+.woo-cat-trend-up {
+    color: #28a745;
+}
+
+.woo-cat-trend-down {
+    color: #dc3545;
+}
+
+.woo-cat-trend-neutral {
+    color: #6c757d;
+}
+
+/* Charts */
+.woo-cat-chart-container {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e2e4e7;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.woo-cat-chart-container h2 {
+    margin-top: 0;
+}
+
+.woo-cat-chart {
+    height: 300px;
+    position: relative;
+}
+
+/* Data Grid */
+.woo-cat-data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .woo-cat-data-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.woo-cat-data-table {
+    padding: 20px;
+    border: 1px solid #e2e4e7;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.woo-cat-data-table h2 {
+    margin-top: 0;
+}
+
+/* Help */
+.woo-cat-help-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e2e4e7;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.woo-cat-help-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e4e7;
+}
+
+.woo-cat-help-content h3 {
+    margin: 20px 0 10px 0;
+    color: #23282d;
+}
+
+/* Settings */
+.woo-cat-settings-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e2e4e7;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.woo-cat-settings-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e4e7;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .woo-cat-filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .woo-cat-filter label {
+        margin-bottom: 5px;
+    }
+    
+    .woo-cat-filter-control {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
